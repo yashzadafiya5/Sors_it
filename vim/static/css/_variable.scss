@@ -1,0 +1,33 @@
+$primaryColor: #7266e1;
+$secondaryColor: #60aefb;
+$lightBlackColor: #21222d;
+$offWhiteColor: #dbdbe5;
+
+$primaryBgColor: #7266e1;
+$secondaryBgColor: #60aefb;
+$lightBlackBgColor: #21222d;
+$offWhiteBgColor: #dbdbe5;
+
+
+// $primaryGradiantColor:;
+// $secondaryGradiantColor: ; 
+
+$primaryShadow: 0 5px 7px rgba(0, 0, 0, 0.3);
+
+$primaryFontFamily: 'Noto Sans JP',
+sans-serif;
+$secondaryFontFamily: 'Public Sans',
+sans-serif;
+
+
+@mixin primaryBorder($size) {
+    border: $size solid #7266e1;
+}
+
+@mixin secondaryBorder($size) {
+    border: $size solid #60aefb;
+}
+
+@mixin lightBlackBorder($size) {
+    border: $size solid #171717;
+}

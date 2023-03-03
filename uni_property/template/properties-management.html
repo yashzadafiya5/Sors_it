@@ -1,0 +1,55 @@
+{% extends 'property-managment-template.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Properties-Management===================== -->
+    <section class="Properties-Management">
+        <div class="container">
+            <h2 class="mb-4 fw-bold text-center">
+                <span class="text-secondary">Welcome to Uni Property Management,</span> <br>a leading provider of property management services.
+            </h2>
+            <div class="row">
+                <div class="col-md-12 Properties-Management-box mt-3">
+
+                    <div class="Properties-text">
+                        <p><i class="fa-solid fa-circle"></i>
+                            {{ properties_management_services.0.description_one }}
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-12 Properties-Management-box">
+                        <div class="Properties-text">
+                            <p class="text-dark fw-normal"><i class="fa-solid fa-circle"></i>
+                                {{ properties_management_services.0.description_two }}
+                            </p>
+                        </div>
+                    
+                </div>
+                <h2 class="mb-4 mt-5 text-center fw-normal">Here's what you can expect from our<span class="fs-1 fw-bold"> FREE </span>Property
+                    Management Assessment:</h2>
+                <div class="col-md-6 Properties-Management-box mt-3">
+                    <div class="Properties-text-bottom">
+                        <p>{{ property_management_assessment.0.property_management_assessment_One }}</p>
+                        <p>{{ property_management_assessment.0.property_management_assessment_Two }}</p>
+                        <p>{{ property_management_assessment.0.property_management_assessment_Three }}</p>
+                        <p>{{ property_management_assessment.0.property_management_assessment_Four }}</p>
+                        <p>{{ property_management_assessment.0.property_management_assessment_Five }}</p>
+                    </div>
+                </div>
+                <div class="col-md-6 Properties-Management-box mt-3">
+                    <div class="Properties-text-bottom">
+                        <p>
+                            {{ property_management_assessment.0.property_management_assessment_description_one }}
+                        </p>
+                        <p>
+                            {{ property_management_assessment.0.property_management_assessment_description_two }}
+                        </p>
+                        <p><a href="" class="text-white">Schedule a free property assessment today</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Properties-Management end===================== -->
+{% endblock %}
+     

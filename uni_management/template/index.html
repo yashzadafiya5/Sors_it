@@ -1,0 +1,378 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block content %}
+    
+<!----banner---->
+<div class="main-banner">
+
+    <div class="container-fluid banner-section">
+        <!-- New Row Slider -->
+        <div class="row banner">
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12 left-part mt-3">
+                <div class="mx-auto text-center">
+                    {% for header_data in header %}
+                    <div class="left-column-img">
+                        <img src="/media/{{header_data.background_image}}" class="img-fluid banner-img" alt="">
+                    </div>
+                    
+                    <div class="left-column-text">
+                        <h2 class="text-center left-column-uptext">{{header_data.title}}</h2>
+                        {% endfor %}
+                            <a href="" class="btn left-column-btn1">Available Rentals</a>
+                            <a href="" class="btn left-column-btn2">Property Management</a>
+                        </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12  right-part mt-3">
+                <div class="right-column-img">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- formore========================= -->
+<div class="for-more row">
+    <h1 class="text-center col-12 m-0 col-sm-12 p-0 mb-0 text-light areas-covered text-white">Areas Covered
+    </h1>
+    <h2 class="text-center col-12 col-sm-12 m-0 p-0  mt-0 text-white">LaSalle &nbsp;| &nbsp;Amherstbur
+        &nbsp;|&nbsp; Windsor &nbsp;|&nbsp; Pelee Island &nbsp;|&nbsp; Kingsville &nbsp;|&nbsp; Leamington
+        &nbsp;|&nbsp; Lakeshore</h2>
+</div>
+
+
+<!-- aboutus==================== -->
+<div class="about-us" id="about">
+    <div class="toplins">
+        <img src="{% static '/images/about-topline.svg' %}" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="abouts-image">
+                    <div class="images">
+                        <img src="{% static '/images/uni stuff-02.png' %}" alt="">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="about-content">
+                    <div class="title py-2">
+                        Your Trusted Property
+                        Management Expertis
+
+                    </div>
+                    <p>
+                        Stability, expertise, and operational excellence are the foundations on
+                        which we have built ourproperty management portfolio. Here, at Uni
+                        Property Management, we are committed to deliverexceptional results
+                        for our customers through a combination of knowledge, innovation, and
+                        a customizedapproach. Our culture of leading performance and genuine passion allows
+                        us
+                        to
+                        strike the right balance. We will partner with our
+                        customers and share their future vision to achieve unique results.
+                    </p>
+                    <a href="mission.html">
+                        <div class="">
+                            <button type="submit" class="btn btn-primary"
+                                style="background: #292A29; border:0px; font-size: 1.3rem !important;">For
+                                More</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- whychoose==================== -->
+<div class="why-choose" id="whyus">
+    <div class="why-right-s">
+        <img src="{% static '/images/why-right.svg' %}" alt="">
+    </div>
+    <div class="heading">
+        <h1> Why Choose Property Management?</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="main-box">
+                    <a class="icons">
+                        <img src="{% static '/images/company-ico.svg' %}" alt="">
+                    </a>
+                    <p>Have a residential
+                        or commercial
+                        property</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="main-box">
+                    <a class="icons">
+                        <img src="{% static '/images/safe-dataa-ico.svg' %}" alt="">
+                    </a>
+                    <p>keep property
+                        occupied and in
+                        safe hands</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="main-box">
+                    <a class="icons">
+                        <img src="{% static '/images/clock-ico.svg' %}" alt="">
+                    </a>
+                    <p>Short on time to source
+                        and manage
+                        maintenance requests</p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="main-box">
+                    <a class="icons ico-4">
+                        <img src="{% static '/images/peace-ico.svg' %}" alt="">
+                    </a>
+                    <p>Stress-free passive
+                        income</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- whyus====================== -->
+<div class="why-us">
+    <div class="toplins">
+        <img src="{% static '/images/about-topline.svg' %}" alt="">
+    </div>
+    <div class="center-box">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title">
+                    <h1>Why </h1>
+                    <h1> Choose us?</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="{% static '/images/wu1.svg' %}" alt="">
+                        </div>
+
+                        <h3>Trustworthy</h3>
+                        <p>Have a residential
+                            or commercial
+                            property</p>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <img src="{% static '/images/wu2.svg' %}" alt="">
+                        </div>
+                        <h3>Experts </h3>
+                        <p>keep property
+                            occupied and in
+                            safe hands</p>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <img src="{% static '/images/wu3.svg' %}" alt="">
+                        </div>
+                        <h3>High Standards</h3>
+                        <p>Short on time to source
+                            and manage
+                            maintenance requests</p>
+                    </div>
+
+                    <div class="box">
+                        <div class="icon">
+                            <img src="{% static '/images/safe-data-ico.svg' %}" alt="">
+                        </div>
+                        <h3>Thorough Tenant Screening</h3>
+                        <p>We are very selective when it comes to the quality of tenants..</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- blogs===================== -->
+<div class="blogs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blogs-txt">
+                    <h1>Blogs</h1>
+                    <p>Lorem Ipsum Dolor Sit Amet, Lorem
+                        Ipsum Dolor Sit Amet, Lorem
+                        Ipsum Dolor Sit Amet</p>
+                </div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper blogs-swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="col-md-3 blog-col">
+                            <a href="blogs-list.html">
+                                <div class="img-box">
+                                    <div class="image">
+                                        <img src="{% static '/images/b1.png' %}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-md-3 blog-col">
+                            <a href="blogs-list.html">
+                                <div class="img-box">
+                                    <div class="image">
+                                        <img src="{% static '/images/b2.png' %}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    </div>
+
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="col-md-3 blog-col">
+                            <a href="blogs-list.html">
+                                <div class="img-box">
+                                    <div class="image">
+                                        <img src="{% static '/images/b3.png' %}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                        eiusmod
+                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                        veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                    </div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Testimonials============== -->
+<div class="testimonial" id="Testimonials">
+    <div class="heading">
+        <h1>Testimonials</h1>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="review-container">
+                        <img src="{% static '/images/t1.png' %}" alt="">
+                        <div class="info">
+                            <h5>Olivia Brown</h5>
+                        </div>
+                        <img src="{% static '/images/google-icon 3.svg' %}" alt="" class="google-ico">
+                    </div>
+
+                    <div class="stars text-center">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="description">i am an accredited Real Estate Agent. I help match the right
+                        people
+                        with suitable
+                        properties in
+                        Windsor-Essex. With
+                        extensive experience in sales and customer service.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="review-container">
+                        <img src="{% static '/images/t2.png' %}" alt="">
+                        <div class="info">
+                            <h5>Olivia Brown</h5>
+                        </div>
+                        <img src="{% static '/images/google-icon 3.svg' %}" alt="" class="google-ico">
+                    </div>
+
+                    <div class="stars text-center">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="description">i am an accredited Real Estate Agent. I help match the right
+                        people
+                        with suitable
+                        properties in
+                        Windsor-Essex. With
+                        extensive experience in sales and customer service.
+                    </p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="review-container">
+                        <img src="{% static '/images/t3.png' %}" alt="">
+                        <div class="info">
+                            <h5>Olivia Brown</h5>
+                        </div>
+                        <img src="{% static '/images/google-icon 3.svg' %}" alt="" class="google-ico">
+                    </div>
+
+                    <div class="stars text-center">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="description">i am an accredited Real Estate Agent. I help match the right
+                        people
+                        with suitable
+                        properties in
+                        Windsor-Essex. With
+                        extensive experience in sales and customer service.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% include 'contact.html' %}
+
+{% endblock %}
+

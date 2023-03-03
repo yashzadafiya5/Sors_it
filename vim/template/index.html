@@ -1,0 +1,394 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block content %}
+    
+
+        <!----banner---->
+        <div class="banner position-relative">
+            <div class="main-banner-img">
+                <img src="{% static '/images/main-banner-img.png' %}" alt="">
+            </div>
+            <div class="main-banner-txt">
+                <h1>Combining <br>
+                    Science & Care</h1>
+                <!-- <p>
+                    Lorem ipsum dolor sit amet, <br>
+                    consectetuer adipiscing <br>
+                    volutpat.
+                </p>
+                <div class="banner-btn">
+                    <button type="submit"><a href="#">Submit</a> </button>
+                </div> -->
+            </div>
+            <div class="hex">
+                <img src="{% static '/images/heexa.svg' %}" alt="">
+            </div>
+
+        </div>
+
+        <!----about---->
+        <div class="about-us" id="about">
+            <div class="container-flude">
+                <div class="row">
+                    <div class="col-md-6 col-xl-9 p-0">
+                        <div class="main-background">
+                            <div class="swiper mySwiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="slider-image">
+                                            <img src="{% static '/images/02.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-image">
+                                            <img src="{% static '/images/06.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="slider-image">
+                                            <img src="{% static '/images/05.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-3 p-0" style="background-color: #fff; z-index: 2;">
+                        <div class="content">
+                            <h1>ABOUT</h1>
+                            <div class="about-image">
+                                <img src="{% static '/images/about-main-img.png' %}" alt="">
+                            </div>
+                            <!-- <p>Vim Meditech Pvt. Ltd. pioneers in innovative parenteral drug delivery systems and it is
+                                the world's first company to have achieved manufacturing glass syringes and filling
+                                formulations into glass and polymer syringes from 0.5 ml to 10 ml - all under one roof.
+                            </p> -->
+                            <p>Vim Meditech is venturing into the business of biopharmaceutical research and
+                                development, process development, manufacturing and marketing of bio-therapeutic
+                                proteins and vaccines.</p>
+
+                            <a href="About copy.html">
+                                <div class="banner-btn">
+                                    <button type="submit"> For More</button>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----best services---->
+        <!-- <div class="best-service" id="Whyus"> -->
+        <!-- <div class="right-shape">
+                <img src="{% static '/images/review-shape.png' %}" alt="">
+            </div> -->
+        <!-- <div class="container-flude">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="main-content-box">
+                            <div class="best-image">
+                                <img src="{% static '/images/best-image.png' %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="main-content">
+                            <div class="title">
+                                Commited to always <br>
+                                Give best Services
+                            </div> -->
+        <!-- <p>Lorem ipsum dolor sit amet, <br>
+                                consectetuer adipiscing
+                            </p> -->
+        <!-- <div class="numbers-row">
+                                <div class="number-box">
+                                    <h2>15</h2>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                                <div class="number-box">
+                                    <h2>78</h2>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                                <div class="number-box">
+                                    <h2>54</h2>
+                                    <p>Lorem ipsum dolor</p>
+                                </div>
+                            </div> -->
+        <!-- </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+        <!----Reviews---->
+        <!-- <div class="reviews" id="Testimonials">
+
+            <div class="title">
+                Reviews
+            </div>
+            <div class="swiper1 mySwiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="mian-box">
+                            <div class="left-panel">
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile1.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile2.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile3.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-panel">
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile3.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile2.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile1.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mian-box">
+                            <div class="left-panel">
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile1.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile2.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile3.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-panel">
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile3.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile2.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile1.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="mian-box">
+                            <div class="left-panel">
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile1.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile2.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile3.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="left-panel">
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile3.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile2.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                                <div class="profile-row">
+                                    <div class="profile-img">
+                                        <img src="{% static '/images/profile1.png' %}" alt="">
+                                    </div>
+                                    <div class="text-start">
+                                        <div class="name">Lorem ipsum</div>
+                                        <p>dolor sit amet, consectetuer <br> adipiscing</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination dots1"></div>
+            </div>
+        </div> -->
+
+        <!----contact us---->
+        <div class="contact" id="contact">
+            <!-- <div class="right-shape">
+                <img src="{% static '/images/contact-shape.png' %}" alt="">
+            </div> -->
+            <!-- <div class="contac-shape">
+                <img src="{% static '/images/contact-us-shape.png' %}" alt="">
+            </div> -->
+            <div class="container-flude">
+                <div class="row">
+                    <div class="main-contact-img">
+                        <div class="contact-main-detail" data-aos="zoom-in">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="map">
+                                        <iframe
+                                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.576636543572!2d72.52214243488771!3d23.07597789999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e834c4857596f%3A0xa0965704f9be238f!2sGanesh%20Meridian!5e0!3m2!1sen!2sin!4v1676622944795!5m2!1sen!2sin"
+                                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="contact-form">
+                                        <h1 data-aos="fade-up" data-aos-delay="300">Get In Touch</h1>
+                                        <form action="{% url 'vim:index page' %}" method="post">
+                                            {% csrf_token %}
+                                            <div class="group">
+                                                <input class="inputMaterial" name="name" type="text"
+                                                    pattern="[A-Za-z0-9]+" required />
+                                                <span class="bar"></span>
+                                                <label>Your Name </label>
+                                            </div>
+                                            <div class="group">
+                                                <input class="inputMaterial" type="text" name="mnumber"
+                                                    pattern="[6789][0-9]{9}" required />
+                                                <span class="bar"></span>
+                                                <label>Your Mobile Number </label>
+                                            </div>
+                                            <div class="group">
+                                                <input class="inputMaterial" type="email" name="email"
+                                                    pattern="[a-zA-Z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]{2,4}" required />
+                                                <span class="bar"></span>
+                                                <label>Your Email </label>
+                                            </div>
+                                            <div class="group">
+                                                <input class="inputMaterial" type="Subject" name="subject" required />
+
+                                                <span class="bar"></span>
+                                                <label>Subject</label>
+                                            </div>
+                                            <div class="group">
+                                                <input class="inputMaterial" type="message" name="message" required />
+
+                                                <span class="bar"></span>
+                                                <label>Your Message</label>
+                                            </div>
+                                            <div>
+                                                <button class="primary-btn1" type="submit" name="button">Send
+                                                    Message</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+{% endblock %}

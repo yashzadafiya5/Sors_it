@@ -1,0 +1,318 @@
+/* Desktop Css Starts */
+
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+    border-color: #021d4b !important;
+}
+
+.listing-container {
+    height: auto;
+    padding-top:10rem;
+    padding-bottom: 5rem;
+}
+
+.main-section{
+    position: absolute !important;
+}
+
+
+.listing-container a {
+    background: #C79B70;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    font-size: 1rem;
+    width: 100% !important;
+    padding:0.5rem 0rem;
+}
+
+.listing-container .property-col {
+    margin-bottom: 2.4rem;
+}
+
+.listing-container .property-col:hover img{
+transform: scale(1.1);
+transition: 1s;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.listing-container .property-col img {
+    max-height: 100%;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+}
+
+.listing-container a:hover {
+    color: black;
+    background: #C79B70;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    font-weight: 500;
+}
+/* ==================================== */
+.form-label{
+    margin-right: 0.2rem !important;
+}
+.form-select{
+    
+    width: auto !important;
+    display: inline !important;
+}
+.form-click{
+    width: 100% !important;
+    display: block !important;  
+}
+
+
+/* .form-select:focus{
+    border-color: white !important;
+    box-shadow: none !important;
+} */
+/* ============================================ */
+/* Form Css Starts */
+
+
+.listing-container form {
+    border: 1px solid #C79B70;
+    padding: 1rem;
+    border-radius: 10px;
+    height: 35rem;
+}
+
+.listing-container form label {
+    font-size: 0.9rem !important;
+}
+
+.listing-container .form .form-group {
+    margin-top: -0.6rem !important;
+}
+
+.listing-container form input {
+    height: 2rem;
+}
+
+.listing-container form a:hover {
+    color: blue !important;
+}
+
+
+
+
+.listing-container img:nth-child(2) {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.listing-container form input {
+    border: 2px solid #021d4b;
+}
+
+.listing-container form .btn {
+    background-color: #C79B70;
+    border: 0px;
+    border-radius: 7px;
+}
+
+/* Form Css Ends */
+
+/* Contact us css Starts */
+.contact-us-section {
+    margin-top: 0.5rem !important;
+}
+
+
+.contact-us-section iframe {
+    margin-left: 1.4rem;
+    margin-top: 2.8rem;
+    padding-top: 7rem;
+}
+
+/* Contact us End */
+
+/* filter start */
+.filter{
+    padding-top: 7rem;
+    padding-right: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+
+}
+
+.filter-dropdown{
+    padding: 1rem;
+}
+.dropdwon-filter{
+    position: relative;
+    /* top: -85px; */
+}
+.form-check-input[type=radio] {
+    margin-left: -1rem !important;
+    
+}
+label{
+padding-left: 0.2rem !important;
+}
+.form-dropdown{
+    padding-left: 1.5rem !important;
+    min-width: 12rem !important;
+}
+.form-dropdown h5{
+    margin-left: -1rem;
+}
+.form-dropdown select{
+    margin-left: -1rem; 
+}
+.filter-box{
+    width: auto !important;
+    padding: 0.5rem 0.5rem;
+}
+option ,label{
+    font-family: 'Poppins', sans-serif !important;
+}
+/* filter end */
+
+/* filter mobile view start  */
+@media only screen and (max-width:768px){
+    .filter{
+        padding-top: 7rem;
+        padding-right: 0rem;
+        display: flex;
+        justify-content: start;
+    
+    }  
+}
+/* filter mobile view end */
+
+
+
+/* Footer Section Css Starts */
+
+/* Footer Section Css Ends */
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    nav .nav-item a {
+        font-size: 1rem !important;
+    }
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+
+    .left-img {
+        width: 1rem !important;
+        margin-right: 20rem !important;
+    }
+
+    .two-col-img {
+        padding-left: 5rem !important;
+        margin-top: -3rem !important;
+    }
+
+    .two-col-img img {
+        width: 7.5rem !important;
+        height: 7rem !important;
+
+    }
+
+}
+
+/* Tablet Css Starts */
+/* Tablets, Ipads (portrait) ##Screen=B/w 768px to 1024px */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .basma-form {
+        display: none;
+    }
+
+    .listing-container .first-col {
+        width: 100%;
+    }
+
+    .listing-container .second-col {
+        width: 100%;
+        margin-bottom: 0rem;
+        margin-top: 3rem;
+    }
+
+    .contact-us-section {
+        margin-top: 6rem !important;
+    }
+
+    .contact-us-section iframe {
+        min-width: 20rem;
+    }
+}
+
+/* Tablet Css End */
+/* Mobile Css Starts */
+
+@media (max-width: 767px) {
+
+.listing-container{
+    padding-top: 5.5rem;
+}
+.main-section {
+    position: unset !important;
+}
+
+
+}
+
+/* Mobile Css Starts */
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+    .listing-container .property-col img {
+        max-height: 100%;
+    }
+
+
+    .contact-us-section {
+        margin-top: 0.5rem !important;
+        margin-bottom: -7rem !important;
+        padding-bottom: 0rem !important;
+    }
+    .contact-us{
+        margin-top: -2rem !important;
+        margin-bottom: 8rem !important;
+    }
+
+    .footer-section {
+        margin-top: 6rem !important;
+    }
+
+    .footer-section .social-profiles ul {
+        margin-left: auto !important;
+    }
+}
+
+
+/* Mobile Css Ends */

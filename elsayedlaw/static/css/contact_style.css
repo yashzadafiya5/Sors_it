@@ -1,0 +1,100 @@
+.consultation{
+    max-width: 1100px !important;
+}
+.left-part{
+    width: 90%;
+}
+
+/* left part start */
+.contact-left-title{
+    color: white;
+    padding-bottom: 3rem;
+   
+   
+}
+.contact-line-text{
+
+text-align: justify;
+
+}
+.contactus-text{
+    padding-top: 2rem !important;
+   
+}
+
+.fa-map-marker-alt,.contact-map-text{
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.contact-icon{
+    padding-bottom: 2rem;
+}
+
+/* icon hover effect */
+.contact-social-media{
+    padding: 0.3rem;
+}
+.contact-icon-facebook{
+    background-color: rgb(143, 140, 140);
+}
+.contact-icon-facebook:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+.contact-icon-twitter{
+    background-color: rgb(143, 140, 140); 
+}
+.contact-icon-twitter:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+.contact-icon-google-plus{
+    background-color: rgb(143, 140, 140); 
+}
+.contact-icon-google-plus:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+.contact-icon-pinterest {
+    background-color: rgb(143, 140, 140); 
+}
+.contact-icon-pinterest:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+.contact-icon-instagram{
+    background-color: rgb(143, 140, 140); 
+}
+.contact-icon-instagram:hover{
+    background-color: rgba(255, 0, 0, 0);
+}
+/* left part end */
+/* right part start */
+.contact-form{
+    background-color: #E6E2E2;
+    padding: 2.5rem;
+    padding: 1rem 1.9rem;
+    border-radius: 35px;
+}
+.fieldset-box{
+    width: 100%;
+    margin: 5px 0;
+}
+.submit-btn{
+    background-color: #c8b291;
+    color: #ffffff;
+    border-radius: 0px 0px 0px 0px;
+    padding: 15px 25px 15px 25px;
+}
+.submit-btn:hover{
+    background-color:#2f2e42;
+}
+.service-drop{
+    display: block;
+    width: 100%;
+    background-color: white;
+    color: #4d4c4c;
+}
+/* right part end */
+
+label{
+    margin-bottom: 5px !important;
+    color: white;
+}

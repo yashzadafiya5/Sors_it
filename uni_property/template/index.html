@@ -1,0 +1,250 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block content %}
+
+
+
+<!----banner---->
+<div class="main-banner">
+    <div class="container-fluid banner-section">
+        <!-- New Row Slider -->
+        <div class="row">
+            <div class="col-lg-6 pt-3 left-part">
+                <div>
+                    <div class="left-side-img">
+                        <h2 class="text-center left-column-uptext text-white text-uppercase">
+                            <span style="--i:1;">L</span><span style="--i:2;">o</span><span style="--i:3;">r</span><span
+                                style="--i:4;">e</span><span style="--i:5;">m</span>
+
+                            <span style="--i:6;">i</span><span style="--i:7;">p</span><span style="--i:8;">s</span><span
+                                style="--i:9;">u</span><span style="--i:10;">m</span>
+                            <span style="--i:11;">d</span><span style="--i:12;">o</span><span
+                                style="--i:13;">l</span><span style="--i:14;">o</span><span style="--i:15;">r</span>
+                            <span style="--i:16;">s</span><span style="--i:17;">i</span><span style="--i:18;">t</span>
+                            <span style="--i:19;">a</span><span style="--i:20;">m</span><span
+                                style="--i:21;">e</span><span style="--i:22;">t</span>
+                            <span style="--i:23;">c</span><span style="--i:24;">o</span><span
+                                style="--i:25;">n</span><span style="--i:26;">s</span><span
+                                style="--i:27;">e</span><span style="--i:28;">c</span><span
+                                style="--i:29;">t</span><span style="--i:30;">e</span><span
+                                style="--i:31;">t</span><span style="--i:32;">u</span><span style="--i:34;">r</span>
+                            <span style="--i:35;">a</span><span style="--i:36;">d</span><span
+                                style="--i:37;">i</span><span style="--i:38;">p</span><span
+                                style="--i:39;">i</span><span style="--i:40;">s</span><span
+                                style="--i:41;">i</span><span style="--i:42;">c</span><span
+                                style="--i:43;">i</span><span style="--i:44;">n</span><span style="--i:45;">g</span>
+                            <span style="--i:46;">e</span><span style="--i:47">l</span><span style="--i:48;">i.</span>
+                        </h2>
+                        <a href="" class="btn left-column-btn1">Available Rentals</a>
+                        <a href="" class="btn left-column-btn2">Property Management</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 pt-3 right-part">
+                <div>
+                    <div class="right-side-img">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----banner---->
+
+
+<!-- formore========================= -->
+<div class="for-more row">
+    <h1 class="text-center col-12 m-0 col-sm-12 p-0 mb-0 text-light areas-covered text-white">Areas Covered
+    </h1>
+    <h2 class="text-center col-12 col-sm-12 m-0 p-0  mt-0 text-white">{{ areas_coverd.areas_name }}</h2>
+</div>
+
+
+<!-- aboutus==================== -->
+<div class="about-us" id="about">
+    <div class="toplins">
+        <img src="{% static '/images/about-topline.svg' %}" alt="">
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-6">
+                <div class="abouts-image">
+
+                    <div class="images">
+
+                        <img src="{{ about_us.image.url  }}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6">
+                <div class="about-content">
+                    <div class="title py-2">
+                        {{ about_us.title }}
+
+                    </div>
+                    <p>
+                        {{ about_us.description }}
+                    </p>
+                    <a href="{% url 'property_management:mission' %}">
+                        <div class="">
+                            <button type="submit" class="btn btn-primary"
+                                style="background: #292A29; border:0px; font-size: 1.3rem !important;">
+                                {{ about_us.button_name }}</button>
+                        </div>
+                    </a>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- whychoose==================== -->
+<div class="why-choose" id="whyus">
+    <div class="why-right-s">
+        <img src="{% static '/images/why-right.svg' %}" alt="">
+    </div>
+    <div class="heading">
+        <h1> Why Choose Property Management?</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            {% for property in why_choose_property_management %}
+            <div class="col-sm-6 col-md-6 col-lg-3">
+                <div class="main-box">
+                    <a class="icons">
+                        <img src="{{property.image.url}}" alt="">
+                    </a>
+                    <p>{{property.title}}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+<!-- whyus====================== -->
+<div class="why-us">
+
+    <div class="toplins">
+        <img src="{% static '/images/about-topline.svg' %}" alt="">
+    </div>
+    <div class="center-box">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="title">
+                    <h1>Why </h1>
+                    <h1> Choose us?</h1>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content">
+                    {% for our_detail in why_choose_us %}
+                    <div class="box">
+                        <div class="icon">
+                            <img src="{{our_detail.image.url}}" alt="">
+                        </div>
+                        <h3>{{our_detail.title}}</h3>
+                        <p>{{our_detail.description}}</p>
+                    </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- blogs===================== -->
+<div class="blogs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="blogs-txt">
+                    <h1>Blogs</h1>
+                    <p>Lorem Ipsum Dolor Sit Amet</p>
+                </div>
+            </div>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper"
+                    style="cursor: grab; transition-duration: 0ms; transform: translate3d(103.5px, 0px, 0px);"
+                    id="swiper-wrapper-ee5a9b45edd41737" aria-live="off">
+
+                    {% for blog in blog_details %}
+                        <div class="swiper-slide"  role="group"
+                            aria-label="3 / 3" data-swiper-slide-index="2">
+                            <div class="col-md-4 blog-col col-sm-12 ">
+                                <a href="{{ blog.get_absolute_url }}" class="card border-0">
+                                    <div class="img-box">
+                                        <div class="image">
+                                            <img src="{{ blog.main_image.url }}" alt="">
+                                        </div>
+                                        <div class="text">
+                                            <h5 class="text-dark"><b>{{ blog.title }}</b></h5>
+                                            <span class="text-dark">{{ blog.description|safe|truncatechars:220|striptags}}</span>
+                                        </div>
+        
+                                        <div class="read-more-link">
+                                            <a href="{{ blog.get_absolute_url }}" style="color: #C79B70;">Read More</a>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- blogs===================== -->
+
+<!-- Testimonials============== -->
+<div class="testimonial" id="Testimonials">
+    <div class="heading">
+        <h1>Testimonials</h1>
+    </div>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            {% for customers in testomonials %}
+            <div class="swiper-slide">
+                <div class="card">
+                    <div class="review-container">
+                        <img src="{{customers.image_one.url}}" alt="">
+                        <div class="info">
+                            <h5>{{customers.name}}</h5>
+                        </div>
+                        <img src="{% static 'images/ezgif.com-gif-maker.jpg' %}" alt="" class="google-ico">
+                    </div>
+
+                    <div class="stars text-center">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </div>
+
+                    <p class="description">{{customers.description}}
+                    </p>
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</div>
+
+{% include 'contactform.html' %}
+
+{% endblock %}

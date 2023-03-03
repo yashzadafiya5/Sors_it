@@ -1,0 +1,32 @@
+.home-improments{
+    padding-top: 9rem;
+    padding-bottom: 3rem;
+}
+.home-improment p{
+    font-size: 1.3rem !important;
+    text-align: justify;
+}
+.home-improment i{
+    color: #c0701f;
+    font-size: 1rem !important;
+}
+.home-service-line{
+    border-bottom: 2px solid #c0701f;
+}
+
+.home-service h5{
+    padding: 0.7rem 0.8rem 0.1rem;
+}
+
+.home-service p{
+    font-size: 1rem !important;
+    text-align: justify;
+    color: rgb(73, 71, 71);
+   
+    padding: 0.3rem 0.8rem;
+}
+.home-improment-bottomtext p{
+    text-align: justify;
+    padding-top: 3rem !important;
+    font-size: 1.4rem !important;
+}

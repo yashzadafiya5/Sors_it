@@ -1,0 +1,315 @@
+ .single-listing-container{
+    margin-top:10rem;
+    margin-bottom: 3rem;
+    max-width: 75rem!important;
+ }
+
+
+
+ .single-listing-container .info {
+     background: #F5F6F5;
+     padding: 15px;
+     border-radius: 7px;
+     margin-bottom: 2rem;
+
+ }
+
+ .single-listing-container .info h4 {
+     font-size: 1.3rem;
+     font-weight: 600;
+     padding-top: 0.6rem;
+     color: black !important;
+ }
+
+ .single-listing-container .img-grid{
+    background: #F5F6F5;
+    padding: 2rem;
+    border-radius: 7px;
+ }
+
+
+ .single-listing-container .two-col-img img{
+    width: 89%;
+    display: block;
+ }
+
+ .single-listing-container .second-two-col-img{
+    padding-top: 1.2rem;
+ }
+
+
+
+ /* Address Css Starts */
+ .single-listing-container .address {
+     padding: 10px 10px 0px 20px;
+     margin-top: 1rem;
+ }
+
+
+ .single-listing-container .address .row .info-text-container {
+     font-size: 0.9rem;
+     padding-top: 0.6rem;
+     text-align: left;
+ }
+
+ .single-listing-container .address .small-title {
+     border-right: 1px solid black;
+     padding-right: 0.5rem;
+     min-height: 3.7rem;
+     margin-left: 0rem;
+     margin-right: 0rem;
+     padding: 0 20px;
+ }
+
+ .single-listing-container .address .property-decription {
+     max-width: 50rem;
+     border-right: none;
+ }
+
+ .single-listing-container form {
+     border: 1px solid #002461;
+     padding: 1rem;
+     border-radius: 10px;
+     height: auto;
+ }
+
+ .info-text-container span:nth-child(1) {
+     font-weight: 600;
+ }
+
+
+ .property-decription span {
+     font-weight: normal !important;
+ }
+
+ /* Address Css Ends */
+
+ /* Footer Css Starts */
+ .footer-section {
+     margin-top: 5rem;
+ }
+
+.modal .modal-dialog {
+    width: 100%!important;
+}
+
+
+ .modal .modal-body{
+    height: 100%;
+    background: white;
+    width: 100%;
+ }
+  .modal .modal-body img {
+      width: 100% !important;
+      height: 100% !important;
+  }
+
+ /* Footer Css end */
+
+
+
+
+ /* Portrait */
+ @media only screen and (min-width: 1024px) and (max-height: 1366px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1.5) {
+
+     .user-image-container {
+         position: absolute;
+         left: 30% !important;
+         margin-top: 1.4rem;
+         display: inline-block;
+         width: 0%;
+     }
+
+
+
+     .footer-section {
+         margin-top: 2rem !important;
+     }
+
+
+ }
+
+ @media all and (device-width: 1024px) and (device-height: 768px) and (orientation:landscape) {
+
+     .user-image-container {
+         position: absolute;
+         left: 88% !important;
+         margin-top: 1.5rem;
+         display: inline-block;
+         width: 0%;
+     }
+
+
+
+
+     .footer-section {
+         margin-top: 2rem !important;
+     }
+
+     /* your css rules for ipad landscape */
+ }
+
+ /* Tablets, Ipads (portrait) ##Screen=B/w 768px to 1024px */
+ @media only screen and (min-device-width: 1024px) and (min-device-pixel-ratio : 2.0) and (orientation: landscape) {
+
+
+
+
+ }
+
+ /* iPad Air */
+ @media only screen and (device-width: 1180px) and (device-height: 820px) and (orientation : landscape) {
+
+
+
+
+ }
+
+ /* Tablet Css Starts */
+ @media (min-width: 768px) and (max-width: 912px) {
+
+    .single-listing-container .two-col-img img {
+            width: 83%!important;
+            display: block;
+        }
+     .single-listing-container .first-column {
+         width: 100%;
+     }
+
+
+
+     .single-listing-container .second-column {
+         width: 100%;
+         margin: 0 auto;
+         margin-top: 2rem;
+     }
+
+     .single-listing-container .second-column form {
+         max-width: 80%;
+         margin: 0 auto;
+     }
+
+
+     .footer-section .social-profiles ul {
+         list-style-type: none;
+         margin-top: 1rem;
+         margin-left: -3rem;
+         position: relative;
+
+     }
+
+
+
+ }
+
+ /* Tablet Css ends */
+
+
+ @media (max-width: 767px) {
+
+
+    .single-listing-container {
+            margin-top: 5rem;
+            margin-bottom: 3rem;
+            width: 100% !important;
+        }
+
+        .single-listing-container .left-img img{
+            width: 100%;
+            padding: 0!important;
+            margin: 0 auto!important;
+        }
+
+
+
+                .single-listing-container .img-grid {
+                    background: #F5F6F5;
+                    padding: 1rem;
+                    border-radius: 7px;
+                }
+.single-listing-container .two-col-img{
+   margin-left: 0.8rem;
+   margin-top: 1rem;
+}
+                                .single-listing-container .two-col-img img {
+                                    padding-top: 1.2rem;
+                                    display: block;
+                                    width: 88%;
+                                }
+
+
+     .single-listing-container .info .col-6 {
+         width: 100%;
+         text-align: center !important;
+         padding-bottom: 1rem;
+         padding: 0.5rem;
+     }
+
+
+     .single-listing-container .info {
+         background: #F5F6F5;
+         padding: 10px;
+     }
+
+
+
+     .single-listing-container .info h4 {
+         font-size: 1.3rem;
+         font-weight: 500;
+         display: unset !important;
+         color: black !important;
+     }
+
+
+
+
+
+
+
+
+
+     /* Address Container Css Starts */
+     .single-listing-container .address .row div {
+         display: flex;
+         flex-direction: column;
+     }
+
+     .single-listing-container .address .row .small-title {
+         border-right: 0px !important;
+         min-height: 0.5rem;
+     }
+
+     /* Form  */
+     .single-listing-container form {
+         height: auto !important;
+     }
+
+     /* Footer Css Starts */
+     .footer-section {
+         margin-top: 11rem;
+         padding-bottom: 3rem !important;
+         margin-top: 12rem !important;
+     }
+
+     /* Footer Css end */
+ }
+
+
+
+ @media (min-width: 481px) and (max-width: 767px) {
+
+
+
+     /* Contact Us Css Ends */
+
+ }
+
+ /* Mobile Css Starts */
+ @media (min-width: 320px) and (max-width: 480px) {
+
+     .footer-section .social-profiles ul {
+         margin-left: auto !important;
+     }
+ }
+
+ /* Footer Section Css ends */

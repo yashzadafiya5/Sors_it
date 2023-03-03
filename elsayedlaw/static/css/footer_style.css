@@ -1,0 +1,24 @@
+.footer-container{
+    max-width: auto !important;
+}
+.footer-title{
+    text-align: center !important;
+} 
+ .footer-line{
+    justify-content: center;
+} 
+ .footer-menu{
+    justify-content: center;
+    
+ }
+.map-icon{
+    position: relative;
+    top: -14px;
+}
+
+.footer-line{
+    padding-top: 1px !important;
+    padding-bottom: 1px !important;
+    margin-top: -10px;
+}
+

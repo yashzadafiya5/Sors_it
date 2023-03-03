@@ -1,0 +1,320 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Cursor Plugin Css Link -->
+    <link rel="stylesheet" href="{% static 'Plugins/custom-cursor-scroll-indicator/src/style.css' %}">
+
+    <title>UNI MANAGMENT</title>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/device.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'Plugins/cursor-plugin/style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static '/bootstrap/css/bootstrap.css' %}" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="{% static '/bootstrap/js/bootstrap.js' %}"></script>
+    <script src="{% static '/bootstrap/js/bootstrap.bundle.js' %}"></script>
+    <link rel="icon" type="image/x-icon" href="{% static '/images/Logo.png' %}">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <meta name="description" content="Your Trusted Property Management Expertis" />
+    <meta property="og:title" content="UNI" />
+    <meta property="og:url" content="" />
+    <meta property="og:description" content="Your Trusted Property Management Expertis" />
+    <meta property="og:image" content="{% static '/images/logo.png' %}" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="{% static 'image/png' %}">
+
+    <meta property="og:image:width" content="350">
+    <meta property="og:image:height" content="350">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+        /* Desktop Css */
+        .main-section .main-banner {
+            padding-top: 5rem;
+            padding-bottom: 2rem;
+        }
+
+        .main-banner .container-fluid {
+            position: relative;
+            padding-bottom: 3rem;
+        }
+
+        .banner-section {
+            margin-top: 5rem;
+        }
+
+        .banner {
+            margin-top: -5rem !important;
+        }
+
+
+
+        /* header section=========================================== */
+        .left-side-img {
+            background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+            url("{{hero_slider.0.image.url}}");
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+
+        }
+
+        .left-column-uptext {
+            text-shadow: 1px 1px 1px #919191,
+                1px 2px 1px #919191,
+                1px 9px 8px rgba(16, 16, 16, 0.4),
+                1px 9px 8px rgba(16, 16, 16, 0.2),
+                1px 9px 8px rgba(16, 16, 16, 0.1),
+                1px 9px 8px rgba(16, 16, 16, 0.2);
+        }
+
+        /* ================================= text effect ==========================*/
+
+        .left-side-img .left-column-uptext span {
+            display: inline-block;
+            position: relative;
+            animation: changeText 2s ease-in-out infinite;
+            animation-delay: calc(0.1s * var(--i));
+        }
+
+        @keyframes changeText {
+            0% {
+                transform: translateY(0px);
+                transition: all 10s ease-in-out;
+            }
+
+            20% {
+                transform: translateY(-5px);
+                transition: all 100s ease-in-out;
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* ========================================================== */
+
+        .left-side-img h2 {
+            padding-top: 8rem !important;
+            font-size: 3rem;
+            font-weight: 700 !important;
+            width: 85%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .left-side-img a {
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #c79b70;
+            margin: 0 0.4rem;
+            color: white !important;
+            padding: 0.8rem;
+            font-size: 1.3rem !important;
+        }
+
+        .left-side-img a:hover {
+            border: none !important;
+            background-color: #ffffff !important;
+            border-radius: 0 15px 0 15px;
+            color: #332619 !important;
+            box-shadow: 2px 2px 2px 2px #c79b70, 2px 2px 2px 2px white;
+        }
+
+        .right-side-img {
+            background-image: url("{{hero_slider.2.image.url}}");
+            height: 500px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: 100% 100%;
+            animation: changeImage 30s linear infinite;
+        }
+
+        @keyframes changeImage {
+            0% {
+                background-image: url("{{hero_slider.1.image.url}}");
+            }
+
+            25% {
+                background-image: url("{{hero_slider.2.image.url}}");
+            }
+
+            50% {
+                background-image: url("{{hero_slider.3.image.url}}");
+            }
+
+            75% {
+                background-image: url("{{hero_slider.4.image.url}}");
+            }
+
+            100% {
+                background-image: url("{{hero_slider.5.image.url}}");
+                }
+
+
+            }
+
+
+            /* --------------------------- mobile view ----------------------------  */
+
+            @media only screen and (min-width:280px) and (max-width:500px) {
+                .main-section .main-banner {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+
+                .right-part {
+                    order: 1;
+                }
+
+                .left-part {
+                    order: 2;
+                }
+
+                .left-side-img {
+                    text-align: start !important;
+                }
+
+                .left-side-img {
+                    height: 300px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .right-side-img {
+                    height: 300px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-size: 100% 100%;
+                }
+
+                .left-side-img h2 {
+                    padding-top: 3.9rem !important;
+                    font-size: 1.8rem;
+                    font-weight: 700 !important;
+                    text-align: start !important;
+                    margin-left: 0.8rem !important;
+                }
+
+                .left-side-img a {
+                    background-color: #c79b70;
+                    margin: 0 0.2rem;
+                    color: white !important;
+                    padding: 0.4rem;
+                    font-size: 0.7rem !important;
+                    margin-left: 0.8rem !important;
+                }
+
+            }
+
+            @media only screen and (min-width:501px) and (max-width:768px) {
+                .right-part {
+                    order: 1;
+                }
+
+                .left-part {
+                    order: 2;
+                }
+
+                .main-section .main-banner {
+                    padding-top: 1rem;
+                    padding-bottom: 1rem;
+                }
+
+                .left-side-img {
+                    height: 300px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                }
+
+                .left-side-img a {
+                    background-color: #c79b70;
+                    margin: 0 0rem;
+                    color: white !important;
+                    padding: 0.2rem;
+                    font-size: 1rem !important;
+                }
+
+                .right-side-img {
+                    height: 300px;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-size: 100% 100%;
+                }
+
+                .left-side-img h2 {
+                    padding-top: 5rem !important;
+                    font-size: 2rem;
+                }
+
+
+            }
+
+            @media only screen and (min-width:768px) and (max-width:1370px) {
+
+
+                .main-section .main-banner {
+                    padding-top: 4rem;
+                    padding-bottom: 1rem;
+                }
+            }
+
+            /* ============================================= */
+    </style>
+
+</head>
+
+<body>
+    {% include 'header.html' %}
+
+    {% block content %}
+
+    {% endblock %}
+
+    {% include 'footer.html' %}
+
+
+    <!-- Testimonials Modal Starts-->
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0" style="background: #c79b70;">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="{% static '/images/t1.png' %}" alt="avatar-img" class="user-avatar">
+                    <p class="text-center">
+                        I had an amazing experience with Uni Management, for more than 3 years they have been
+                        managing..
+                        I had an amazing experience with Uni Management, for more than 3 years they have been
+                        managing..
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Testimonials Modal ends-->

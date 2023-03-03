@@ -1,0 +1,46 @@
+{% extends 'mission-template.html' %}
+{% load static %}
+{% block content %}
+    
+
+        <div class="mission-bnr">
+            <div class="main-image">
+                <img src="{% static '/images/mission-bg.svg' %}" alt="">
+            </div>
+            <div class="mission-heading">
+                <h1>Our Mission & Vision</h1>
+            </div>
+            <div class="container my-3">
+                <p>Our Mission: {{mission_vision.0.mission}}</p>
+                <p>Our Vision: {{mission_vision.0.vision}}</p>
+            </div>
+        </div>
+
+        <div class="mission-abouts">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6"> 
+                        <div class="mission-images">
+                            <img src="{{properties_management.0.image.url}}" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-content">
+                            <p>Our property management services include:</p>
+                            <ul>
+                                <li>{{properties_management.0.services_one}}</li>
+                                <li>{{properties_management.0.services_two}}</li>
+                                <li>{{properties_management.0.services_three}} </li>
+                                <li>{{properties_management.0.services_four}}</li>
+                                <li>{{properties_management.0.services_five}}</li>
+                                <li>{{properties_management.0.services_six}}</li>
+                                <li>{{properties_management.0.services_seven}}</li>
+                                <li>{{properties_management.0.services_eight}}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+{% endblock %}

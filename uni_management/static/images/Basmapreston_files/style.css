@@ -1,0 +1,653 @@
+/* Lato Fonts Cdn */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+#{
+
+margin: 0;
+padding: 0;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 999999999;
+}
+.announcement-bar h6{
+    color: #002461;
+    font-size: 1.1rem!important;
+    font-weight: 400;
+}
+
+nav{
+    background: #002461!important;
+    height: 3rem;
+    font-family: 'Lato', sans-serif!important;
+
+}
+
+nav .navbar-brand img{
+    max-width: 170px;
+    position: absolute;
+    top: -7%!important;
+    left: 5%;
+}
+
+nav .nav-item .nav-link{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-right: 1rem;
+}
+
+nav .nav-item .nav-link:hover{
+    color: white!important;
+}
+
+/* Hero Section Css */
+.hero-container{
+background-image: url('assets/imgs/hero-image-min.png');
+height: 57rem;
+background-size: cover;
+height: 100vh;
+    /* Fallback for browsers that do not support Custom Properties */
+    height: calc(var(--vh, 1vh) * 100);
+}
+
+.hero-container h4{
+vertical-align: middle!important;
+position: absolute;
+top: 40%;
+right: auto;
+left: auto;
+font-size: 5rem;
+color: white;
+font-weight: 600;
+text-shadow: 1px 1px 1px #000,
+3px 3px 5px black;
+}
+
+.hero-container a{
+    background: white!important;
+    border-radius: 14px;
+margin: 0 auto;
+position: relative;
+top: 600px;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #002461;
+        padding: 10px!important;
+        width: 15%;
+        text-align: center;
+        text-decoration: none !important;
+transition: 1s;
+}
+
+.hero-container a:hover{
+     color: #002461!important;
+     transition: 1s;
+    transform: scale(1.1);
+        /* Results in 40 pixels square */
+}
+
+/* Hero Section Ends */
+
+
+/* About Us Css Starts */
+
+.about-container{
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.about-container h4 {
+    font-size: 4rem;
+    font-weight: 600;
+    text-align: center!important;
+    color: #002461;
+    margin:  0 auto!important;
+}
+.about-container .line{
+    background: #002461;
+    border-radius: 14px;
+    height: 0.4rem!important;
+    margin-top: 1rem!important;
+}
+
+.about-container .col-1{
+    margin: 0 auto;
+}
+
+.about-container .content-row{
+padding: 100px 0px 0px 0px;
+}
+.about-container .content-row img{
+    max-width: 500px;
+    height: 350px;
+}
+.about-container p {
+    font-size: 1.2rem;
+}
+/* About Us Css Ends */
+
+
+/* Our Services Css Starts */
+.services-container{
+    margin-top: 200px;
+    background: #F5F5F5;
+}
+
+.services-container .services-left-col{
+    background-image: url('assets/imgs/services-bg-img.png');
+    /* background-image: cover; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:50rem;
+    padding: 100px;
+}
+
+.services-container h4{
+    margin-top: 10%;
+    color: #002461;
+    font-size: 3rem;
+
+}
+
+.services-container p{
+
+font-weight: 500;
+font-size: 1.2rem;
+
+}
+.services-container .content-row-1{
+    padding: 0px 100px 0px 100px;
+}
+
+.services-container .btn{
+    border-radius: 14px;
+    background: #002461;
+    font-weight: 600;
+
+}
+
+.services-container .rental-card {
+padding: 20px;
+border-radius: 10px;
+margin-left: 1rem;
+}
+
+.services-container .rental-card img{
+    margin: 0 auto;
+}
+
+.services-container .rental-card h3{
+    color: #000000;
+    font-size:2rem;
+}
+
+.services-container .rental-card h6{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.services-container .rental-card p{
+    font-size: 1rem;
+}
+
+.services-container .right-arrow{
+    font-size: 1.4rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding-left: 20px;
+    line-height: 50px;
+    background: #002461;
+    color: white;
+    position: relative;
+    left: 80%;
+    bottom: -30px;
+}
+
+.services-container .left-arrow {
+    font-size: 1.4rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding-left: 15px;
+    line-height: 50px;
+    background: #002461;
+    color: white;
+    position: relative;
+        left: 73%;
+        bottom: -80px;
+}
+/* Our Services Css ends */
+
+
+/* Testimonial Section Css Starts */
+.testimonial-container{
+    height: 55rem;
+}
+.testimonial-container .card{
+    background: #002461;
+    margin: 0 auto;
+    margin-top: 13rem;
+    height: 38rem;
+    border-radius: 14px;
+    background-image: url('assets/imgs/testimonials.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.testimonial-container .card p{
+    color: white;
+    width:60rem;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.testimonial-container .card p img{
+    width:3rem;
+}
+
+.testimonial-container .card img{
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.testimonial-container .card .arrows img{
+    width:2.3rem;
+    margin-right: 1rem;
+}
+
+.testimonial-container .card .carousel .carousel-control-next{
+    position: relative;
+    top: 0%;
+    left: 45%;
+
+}
+
+.testimonial-container .card .carousel .carousel-control-prev{
+    bottom: -89.7%;
+    left: 39%;
+    margin-top: 7px;
+
+}
+
+/* Testimonial Section Css ends */
+
+/* Instagram Section Css Starts */
+
+.insta-container {
+    /* Fallback for browsers that do not support Custom Properties */
+
+}
+
+.insta-container h4 {
+    font-size: 2.3rem;
+    color: dark;
+}
+/* Instagram Section Css Ends */
+
+  /* Tablets, Ipads (portrait) ##Screen=B/w 768px to 1024px */
+   @media (min-width: 768px) and (max-width: 1024px) {
+
+
+.hero-container a {
+        background: white !important;
+        border-radius: 14px;
+        margin: 0 auto;
+        position: absolute;
+        top: 58%;
+        left: 25%;
+        font-size: 1.3rem;
+        color: #002461 !important;
+        padding: 12px 0px 12px 0px !important;
+        width: 50% !important;
+        text-align: center;
+        text-decoration: none !important;
+    }
+
+        .about-container .content-row img {
+            width: 350px;
+            height:400px;
+            margin-left: 30px;
+        }
+
+                .services-container .services-left-col {
+                    padding: 10px;
+                }
+
+                                  .services-container .left-arrow {
+                                      font-size: 1.4rem;
+                                      border-radius: 50%;
+                                      height: 50px;
+                                      width: 50px;
+                                      padding-left: 15px;
+                                      line-height: 50px;
+                                      background: #002461;
+                                      color: white;
+                                      position: relative;
+                                      left: 68%;
+                                      bottom: -79px;
+                                  }
+.testimonial-container .card {
+    background: #002461;
+    margin: 0 auto;
+    margin-top: 5rem;
+    height: auto;
+    border-radius: 14px;
+    background-image: url('assets/imgs/testimonials.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-bottom: 1.4rem;
+
+}
+
+.testimonial-container .card p {
+    color: white;
+    width: auto;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.testimonial-container .card .carousel .carousel-control-next {
+    left: 50%;
+    bottom: -60% !important;
+}
+
+.testimonial-container .card .carousel .carousel-control-prev a {
+    position: relative;
+    margin-top: -0.9rem;
+    left: -14%;
+}
+
+.testimonial-container .card .carousel .carousel-control-prev {
+
+    left: 38%;
+    margin-top: 38px;
+
+}
+
+  }
+
+
+
+
+/* Mobile Css Starts */
+
+@media (max-width: 767px) {
+
+    .announcement-bar{
+        height: 4rem!important;
+    }
+    .announcement-bar h6 {
+            color: #002461;
+            font-size: 0.9rem !important;
+
+        }
+                nav .navbar-brand img {
+                    max-width: 85px;
+                    position: absolute;
+                    top: 3px !important;
+                    left: 5%;
+border-radius: 5px;
+                }
+nav {
+    background: #002461 !important;
+    height: auto!important;
+}
+
+nav .nav-item .nav-link {
+    font-size: 1rem;
+    font-weight: 300;
+margin-left: 0.8rem;
+}
+
+.nav .nav-nav{
+    padding-bottom: 50px!important;
+    display: none;
+}
+
+/* Hero Css Starts */
+.hero-container{
+    position: relative;
+}
+.hero-container h4 {
+    vertical-align: middle !important;
+    position: absolute;
+    top: 40%;
+    right: auto;
+    left: auto;
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px #000,
+        3px 3px 5px black;
+
+}
+
+.hero-container a {
+    background: white !important;
+    border-radius: 14px;
+    margin: 0 auto;
+   position: absolute;
+   top: 55%;
+   left: 20%;
+    font-size: 1rem;
+    color: #002461!important;
+    padding: 12px 0px 12px 0px !important;
+width: 60%!important;
+    text-align: center;
+    text-decoration: none!important;
+}
+/* Hero Css End */
+
+/* About Us Css Starts */
+
+.about-container {
+    padding-bottom: 0px!important;
+    margin-bottom: 0px!important;
+    margin-top: 0px!important;
+    padding-top: 0px;
+    height: auto;
+
+}
+.about-container .line{
+    display: none;
+}
+
+.about-container h4 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center !important;
+    color: #002461;
+    margin: 0 auto !important;
+}
+
+.about-container .col-1 {
+ width: 100%;
+}
+.about-container .content-row img {
+    max-width: 100%
+}
+
+.about-container p {
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+.about-container .content-row {
+    padding: 20px 0px 0px 0px;
+    padding-bottom: 0px;
+}
+/* About Us Css Ends */
+
+
+/* Services Css Starts */
+.services-container{
+height: 80rem!important;
+
+}
+.services-container .content-row-1 {
+    padding: 0px 0px 0px 0px;
+}
+
+.services-container .services-left-col {
+    padding: 40px;
+}
+.services-container h4{
+    font-size: 1.9rem;
+    margin-top: -1rem;
+}
+
+.services-container .content-row-1 .rental-card{
+width: 100%!important;
+margin:0 auto;
+margin-top: 2rem;
+}
+
+.services-container .rental-card img {
+
+    width: 1px!important;
+    padding: 0px!important;
+    margin:0!important;
+}
+
+.services-container .rental-card h3{
+    font-size: 1.6rem;
+    padding-top: 1rem;
+}
+
+.services-container .rental-card h6{
+    font-size: 1rem;
+}
+.services-container .rental-card p{
+    font-size: 1rem;
+    width: 100%;
+}
+.services-container .rental-card .card-body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.services-container .content-row-1 .col-md-8 {
+    height: auto!important;
+}
+.services-container .services-left-col{
+    height: 40rem;
+}
+
+.services-container .right-arrow {
+    font-size: 1.4rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding-left: 20px;
+    line-height: 50px;
+    background: #002461;
+    color: white;
+    position: relative;
+    left: 50%;
+    top: -30px;
+    bottom: 0px;
+}
+
+.services-container .left-arrow {
+    font-size: 1.4rem;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding-left: 15px;
+    line-height: 50px;
+    background: #002461;
+    color: white;
+    position: relative;
+    left:32%;
+    bottom: -20px;
+}
+
+
+/* Services Css end */
+
+
+/* Testimonial Section Css Starts */
+.testimonial-container {
+
+}
+
+.testimonial-container .card {
+    background: #002461;
+    margin: 0 auto;
+    margin-top: 5rem;
+    height: auto;
+    border-radius: 14px;
+    background-image: url('assets/imgs/testimonials.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.testimonial-container .card p {
+    color: white;
+    width: auto;
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 500;
+}
+
+.testimonial-container .card .arrows img {
+    width: 2.3rem;
+    margin-right: 1rem;
+}
+
+.testimonial-container .card .carousel .spacer{
+    padding-bottom: 2rem;
+}
+.testimonial-container .card .carousel .carousel-control-next {
+    left: 55%;
+    bottom: -60%!important;
+}
+
+.testimonial-container .card .carousel .carousel-control-prev a{
+    position: relative;
+    margin-top:-0.9rem;
+    left: -14%;
+}
+
+.testimonial-container .card .carousel .carousel-control-prev {
+
+    left: 35%;
+    margin-top: 7px;
+
+}
+/* Testimonial Section Css ends */
+
+
+/* Instagram Section Css Starts */
+.insta-container{
+    height: 100vh;
+    margin-top: 20rem;
+    height: 100vh;
+        /* Fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+}
+.insta-container h4{
+    font-size: 1.5rem;
+    color: dark;
+    z-index: 99999999;
+}
+/* Instagram Section Css ends */
+}
+/* Mobile Css end */

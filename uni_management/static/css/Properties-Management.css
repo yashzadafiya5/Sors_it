@@ -1,0 +1,65 @@
+.Properties-Management {
+   margin-top: 9rem;
+   padding-bottom: 3rem;
+}
+
+.Properties-text p {
+   font-size: 1.4rem !important;
+   /* color: white; */
+}
+
+.Properties-text-bottom p {
+   font-size: 1.2rem !important;
+   color: white;
+
+}
+
+.Properties-text {
+   /* background-color: #c79b70; */
+   /* height: 240px; */
+   padding: 1rem 2rem;
+   text-align: justify;
+   border-radius: 10px;
+}
+.Properties-text i{
+ font-size: 1rem !important;
+ color: #c0701f;
+}
+
+.Properties-text-bottom {
+   background-color: #c79b70;
+   height: 350px;
+   padding: 1rem 2rem;
+   text-align: justify;
+   border-radius: 10px;
+}
+
+/* Properties-Management css */
+@media only screen and (max-width:768px) {
+   .Properties-Management {
+      margin-top: 6rem;
+   }
+   
+
+   .Properties-text-bottom {
+      height: auto;
+      padding: 0.5rem 2rem;
+   }
+}
+
+@media only screen and (min-width:769px) and (max-width:990px){
+  
+
+   .Properties-text-bottom {
+      height: 700px;
+     
+   }
+}
+@media only screen and (min-width:991px) and (max-width:1370px){
+ 
+
+   .Properties-text-bottom {
+      height: 500px;
+     
+   }
+}

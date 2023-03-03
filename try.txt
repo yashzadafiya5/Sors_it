@@ -1,0 +1,7 @@
+main_img ImageField
+title CharField max_length = 180
+blog -> Take ckeditor 
+publish_date
+
+search get_absolute_url
+keep 200 char in list blogs

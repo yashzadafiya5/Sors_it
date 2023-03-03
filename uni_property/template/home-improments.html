@@ -1,0 +1,46 @@
+{% extends 'home-improment-template.html' %}
+{% load static %}
+{% block content %}
+    <!-- Home improments===================== -->
+    <section class="home-improments">
+            <div class="container">
+                <h1 class="text-center fw-bold"><span class="text-secondary">Welcome to Uni Property Home
+                        Improvements,</span> <br>your trusted source for property
+                    renovations!</h1>
+
+                <div class="row">
+                    <div class="col-md-12 home-improment mt-3">
+                        <p> <i class="fa-solid fa-circle"></i>  {{ property_home_improvements.0.property_renovations_description }} </p>
+                    </div>
+
+
+                    <div class="col-md-12 my-auto home-improment-text mt-5 mb-3">
+                        <h1 class="fw-normal"><span class="fw-bold text-dark">O</span>ur <span class="fw-bold text-dark">S</span>ervices <br><span class="fw-bold text-dark">I</span>nclude:</h1>
+                    </div>
+                    {% for service in our_services %}
+                        <div class="col-md-6 mt-3">
+                            <div class="home-service">
+                                <h5 class="fw-bold pb-2"><span class="home-service-line">{{ service.title }} </span></span>
+                                </h5>
+                                <p>{{ service.description }}</p>
+                            </div>
+                        </div>
+                    {% endfor %}
+                    
+
+                    <div class="col-md-12  home-improment-bottomtext">
+                        <p>{{ OurServicesDiscription.0.our_services_main_description_one }}</p>
+                    </div>
+                    <div class="col-md-12  home-improment-bottomtext">
+                        <p class="text-dark fw-bold">{{ OurServicesDiscription.0.our_services_main_description_two }}</p>
+                        <p><a href="" class="text-dark fw-bold">Get a free quote for your Home Improvement project</a></p>
+                    </div>
+                </div>
+
+            </div>
+    
+    </section>
+    <!--Home improments end===================== -->
+    
+     
+    {% endblock %}

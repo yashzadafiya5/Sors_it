@@ -1,0 +1,112 @@
+{% extends 'listing-template.html' %}
+{% load static %}
+{% block content %}
+    
+        <!-- -------------------------------------------------------------------- -->
+        <div>
+            <form action="{% url 'property_management:listing' %}" method="get" style="display: flex;" class="filter">
+                <div class="col-md-3 filter-box">
+                    <label for="sortbyServer04" class="form-label">Soty By</label>
+                    <select class="form-select" id="sortbyServer04" aria-describedby="sortbyServer04Feedback" required name="sort_by" >
+                        <option selected="" disabled="">Any</option>
+                        <option value="minimum">Minimum-Price</option>
+                        <option value="maximum">Maximum-Price</option>
+                    </select>
+                </div>
+                <div class="col-md-3  filter-box">
+                    <label for="bedroomServer04" class="form-label">Bedroom</label>
+                    <select class="form-select" id="bedroomServer04" aria-describedby="bedroomServer04Feedback" name="bedroom">
+                        <option selected="" disabled="" value="">Any</option>
+                        <option value="1">1</option>
+                        <option value="1+">1+</option>
+                        <option value="2">2</option>
+                        <option value="2+">2+</option>
+                        <option value="3">3</option>
+                        <option value="3+">3+</option>
+                        <option value="4">4</option>
+                        <option value="4+">4+</option>
+                        <option value="5">5</option>
+                        <option value="5+">5+</option>
+                        <option value="6">6</option>
+                        <option value="6+">6+</option>
+                        <option value="7">7</option>
+                        <option value="7+">7+</option>
+
+                    </select>
+                </div>
+                <div class="col-md-3  filter-box">
+                    <label for="bathroomServer04" class="form-label">Bathroom</label>
+                    <select class="form-select" id="bathroomServer04" aria-describedby="bathroomServer04Feedback" name="bathroom">
+                        <option selected="" disabled="" value="">Any</option>
+                        <option value="1">1</option>
+                        <option value="1+">1+</option>
+                        <option value="2">2</option>
+                        <option value="2+">2+</option>
+                        <option value="3">3</option>
+                        <option value="3+">3+</option>
+                        <option value="4">4</option>
+                        <option value="4+">4+</option>
+                        <option value="5">5</option>
+                        <option value="5+">5+</option>
+                        <option value="6">6</option>
+                        <option value="6+">6+</option>
+                        <option alue="7">7</option>
+                        <option value="7+">7+</option>
+
+                    </select>
+                </div>
+                <div class="col-md-3  filter-box">
+                    <label for="propertytypeServer04" class="form-label"> Property-Type</label>
+                    <select class="form-select" id="propertytypeServer04" aria-describedby="propertytypeServer04Feedback" name="property_type">
+                        <option selected="" disabled="" value="">Choose..</option>
+                        <option value="1">Appartment</option>
+                        <option value="2">Condo</option>
+                        <option value="3">Du/Fourplex</option>
+                        <option value="4">House</option>
+                        <option value="5">Hometown</option>
+                        <option value="6">commercial</option>
+                    </select>
+                </div>
+                <div class="col-md-3  filter-box">
+                    <label for="petfriendlyServer04" class="form-label">Pet Frindly</label>
+                    <select class="form-select" id="petfriendlyServer04" aria-describedby="petfriendlyServer04Feedback" name="is_pet_friendly">
+                        <option selected="" disabled="" value="">Choose..</option>
+                        <option value="True">Yes</option>
+                        <option value="False">No</option>
+                    </select>
+                </div>
+                <div class="col-md-3  filter-box">
+                <button type="submit" class="btn btn-primary border-0 w-100" style="background-color: #C79B70; color:white;">submit</button>
+            </div>
+            </form>
+        </div>
+        <!-- -------------------------------------------------------------------- -->
+        <!-- Property Listing Sections Starts -->
+        <div class="container listing-container" style="padding-top: 3rem;">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 first-col" data-aos="fade-up" data-aos-duration="1200"
+                    data-aos-delay="50">
+                    <div class="row">
+                        {% for home in rental_details %}
+                            <div class="col-md-4 property-col">
+                                <img src="{{home.rental_image_one.url}}"
+                                    alt="property-image" width="230">
+                                <h5 class="text-left pt-3">&#36;{{home.price}}</h5>
+                                <p class="text-left p-0 m-0 pb-2">
+                                    {{home.address}}
+                                </p>
+                                <span>Bed: {{home.bedroom}}</span> <span>Bath: {{home.bathroom}}</span> <br>
+                                <a href="{% url 'property_management:rental detail' home.listing_id %}" class="btn btn-primary border-0 w-100 mt-2">Details</a>
+                            </div>
+                        {% endfor %}
+                        
+                        
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Property Listing Sections Ends -->
+{% endblock %}

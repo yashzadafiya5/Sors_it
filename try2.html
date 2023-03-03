@@ -1,0 +1,43 @@
+<!-- <div class="testimonial" id="Testimonials">
+    <div class="heading">
+        <div class="col-md-12">
+            <div class="blogs-txt">
+                <h1>Blogs</h1>
+                <p>Lorem Ipsum Dolor Sit Amet, Lorem
+                    Ipsum Dolor Sit Amet, Lorem
+                    Ipsum Dolor Sit Amet</p>
+            </div>
+        </div>
+    </div>
+    <div class="swiper-slide swiper-slide-prev" style="margin-right: 100px;" role="group" aria-label="3 / 3"
+        data-swiper-slide-index="2">
+        {% for blog in blog_details %}
+        <div class="swiper-slide">
+            <div class="card">
+                <div class="col-md-3 blog-col">
+                    <a href="{{ blog.get_absolute_url }}">
+                        <div class="img-box">
+                            <div class="image">
+                                <img src="{{ blog.main_image.url }}" alt="">
+                            </div>
+                            <div class="text">
+                                {{ blog.description|truncatechars:200 }}
+                            </div>
+                            <div class="read-more-link text-end">
+                                <a href="{{ blog.get_absolute_url }}">Read More</a>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+    </div>
+</div> -->
+
+
+<div class="title d-flex justify-content-between">
+    <h3>Related Posts</h3>
+    <a href="" class="text-decoration-none text-dark">All Blogs >></a>
+</div>

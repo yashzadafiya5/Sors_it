@@ -1,0 +1,71 @@
+{% load static %}
+
+<!-- Contact Us -->
+<div class="container contact-us-section">
+    <div class="row">
+        <h1 class="py-4 title text-center">Contact Us</h1>
+        <div class="col-md-6 col-sm-12 col-lg-6 my-auto">
+            <img src="{% static '/images/contact-us.png' %}" alt="contactus-img" width="100">
+        </div>
+
+        <div class="col-md-6 col-sm-12 col-lg-6 mx-auto my-auto">
+            <form action="{% url 'property_management:index' %}" class="border rounded p-4" method="post">
+                {% csrf_token %}
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Your Name" name="name">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com" name="email">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Phone No</label>
+                    <input type="tel" class="form-control" id="exampleFormControlInput1"
+                        placeholder="Your Mobile No." name="mobile">
+                </div>
+                <div class="mb-2">
+                    <label for="inputState" class="form-label">Service</label>
+                    <select id="inputState" name="service" class="form-select form-click"  onchange="services(value);">
+                        <option value="Rental">Rental</option>
+                        <option value="Property Management">Property Management</option>
+                        <option value="Home Improvement" selected>Home Improvement</option>
+                    </select>
+                </div>
+                <div class="d-none mb-2" id="property-type-div">
+                    <label for="property-type" class="form-label">Property type</label>
+                    <select id="property-type" class="form-select" name="property_type">
+                        <option value="1" selected>Residential</option>
+                        <option value="2">Commercial</option>
+                        <option value="3">Multi-Unit</option>
+                    </select>
+                </div>
+                <div class="mb-2">
+                    <label for="exampleFormControlInput1" class="form-label">Address</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Enter Your Address" name="address"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Enter Message.." name="message"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="hidden" name="listing_id" value="{{single_rental_details.listing_id}}">
+                </div>
+
+                <div class="mb-3">
+                    <button type="submit" class="btn btn-primary">
+                        Submit
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+<!-- Contact Us ends-->
+

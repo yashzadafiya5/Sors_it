@@ -1,0 +1,51 @@
+{% extends 'base_template.html' %}
+{% load static %}
+{% block content %}
+        <div class="content-blogs">
+            <div class="container">
+                <div class="blogs-title">
+                    <span>{{ blog.title }}</span>
+                </div>
+                <div class="recent-date">
+                    <span>{{ blog.publish_date|date:"Y-m-d" }}</span>
+                </div>
+                <div class="blogs-image">
+                    <img src="{{ blog.main_image.url }}" alt="">
+                </div>
+                <div class="sub-title">
+                    <span>{{ blog.description|safe }}
+                </div>
+                
+            </div>
+        </div>
+        <div class="recent-blogs">
+            <div class="container-flude">
+                <div class="title">
+                    <h3>Related Posts</h3>
+                </div>
+                <div class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        {% for related_blog in related_blogs %}
+                            <div class="swiper-slide">
+                                <a href="{{ related_blog.get_absolute_url }}" class="text-decoration-none">
+                                <div class="resent-blog-box">
+                                    <div class="img-circle">
+                                        <img src="{{ related_blog.main_image.url }}" alt="">
+                                    </div>
+                                    <div class="text">
+                                        {{ related_blog.title }}
+                                        <p>{{ related_blog.publish_date|date:"Y-m-d" }}</p>
+                                    </div>
+                                </div>
+                                </a>
+                            </div>
+                        {% endfor %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% include 'contactform.html' %}
+
+{% endblock %}
